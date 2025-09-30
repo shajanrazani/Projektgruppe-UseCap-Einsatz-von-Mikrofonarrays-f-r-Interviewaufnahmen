@@ -1,4 +1,3 @@
-
 Dieses Repository enthält Skripte zur Aufnahme, Kanal-Trennung und Sensorabfrage mit dem ReSpeaker 4-Mic Array v2.0 (USB) sowie zur Auswertung von VAD (Voice Activity Detection) und DoA (Direction of Arrival).
 Voraussetzungen (je nach Skript): python3, pyaudio, ffmpeg, pyusb, sowie das Seeed-Studio tuning.py-Modul.
 
@@ -18,9 +17,8 @@ DOA.py
 Liest über USB (PyUSB + tuning.py) kontinuierlich die geschätzte Einfallsrichtung (DoA) der dominanten Schallquelle aus und schreibt den Winkel in die Konsole.
 
 get_index.py
-Hinweis: Die hier mitgelieferte Datei enthält aktuell denselben Code wie record.py (Aufnahme).
 Zwecklich sollte get_index.py die Audio-Geräteliste über PyAudio ausgeben, um die Device-ID (Index) des ReSpeaker zu finden.
-Empfehlung: Ersetze den Inhalt durch ein kurzes Listing-Skript, das alle Input-Devices mit Index und Namen ausgibt, damit du RESPEAKER_INDEX in record.py korrekt setzen kannst.
+
 
 Abhängigkeiten
 
